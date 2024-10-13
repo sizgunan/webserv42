@@ -421,8 +421,8 @@ responseHeaders["Set-Cookie"] = "session_id=abc123; Path=/; HttpOnly";
 
 Building and Running:
 
-- git clone <GITHUB.LINK>
-- cd webserv
+- git clone https://github.com/sizgunan/webserv42.git WebServ
+- cd WebServ
 - make
 - ./webserv <config_file.conf>
 
