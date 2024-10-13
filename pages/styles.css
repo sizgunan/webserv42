@@ -1,0 +1,284 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #001219;
+    color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 1.5rem;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.header ul li {
+    margin: 0 2.5rem;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 16px;
+    transition: all 0.15s ease-in-out;
+}
+
+.header ul li a:hover {
+    color: #f48c06;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 60vh;
+    margin: 5rem auto;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.bigTitle {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/*add line at top of copyright*/
+.copyright::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #f5f5f5;
+    margin-bottom: 1rem;
+}
+
+.special {
+    color: #f48c06;
+}
+
+.version {
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+}
+
+.description {
+    margin-bottom: 1.5rem;
+    max-width: 60%;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.callToAction {
+    background-image: url('https://www.transparenttextures.com/patterns/brushed-alum-dark.png');
+    background-color: #f5f5f5;
+    background-blend-mode: multiply;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    color: #001219;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.callToAction:hover {
+    background-color: #f48c06;
+    color: #f5f5f5;
+    border-radius: 20px;
+    cursor: pointer;
+    /*add glow*/
+    box-shadow: 0 0 15px rgba(244, 141, 6, 0.809);
+}
+
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-upload-button {
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 700;
+    color: #001219;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+}
+
+.choose {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-color: #f48c06;
+    background-blend-mode: screen;
+    height: 120px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.choose:hover {
+    background-color: #f48c06;
+    transform: translateY(-5px);
+    color: #f5f5f5;
+    border-radius: 20px;
+    cursor: pointer;
+    /*add glow*/
+    box-shadow: 0 0 15px rgba(244, 141, 6, 0.809);
+}
+
+.file-name-placeholder {
+    font-size: 14px;
+    color: #f5f5f5da;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #f5f5f5;
+}
+
+.separator {
+    width: 100%;
+    height: 2rem;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+}
+
+.linkItem a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #f9a02c;
+    text-decoration: underline;
+}
+
+.postForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.postForm label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #001219;
+}
+
+.postForm input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    margin-bottom: 1rem;
+}
+
+.postForm input[type="submit"] {
+    background-color: #f48c06;
+    color: #f5f5f5;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.basicLink {
+    text-decoration: underline;
+    color: #f48c06;
+    font-size: 16px;
+    transition: all 0.15s ease-in-out;
+}
+
+.basicLink:hover {
+    color: #ffc77d;
+}

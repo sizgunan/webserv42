@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Desktop/WebServ/pages/response_pages/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Desktop/WebServ/pages/styles.css">
+</head>
+<body>
+    <div class="header">
+        <ul class="headerLinks">
+            <li class="headerItem" ><a href="/">Root</a></li>
+            <li class="headerItem" ><a href="#">Upload</a></li>
+            <li class="headerItem" ><a href="/Desktop/WebServ/cgiTests/php/example.php">Get</a></li>
+            <li class="headerItem" ><a href="/Desktop/WebServ/pages/html/post.html">Post</a></li>
+            <li class="headerItem" ><a href="/Desktop/WebServ/cgiTests/php/login.php">Login</a></li>
+        </ul>
+    </div>
+    <div class="container">
+      <form class="uploadForm" action="/Desktop/WebServ/pages/html/upload.html" method="post" enctype="multipart/form-data">
+        <label for="file" class="choose">
+          <h2>Choose File</h2>
+          <input id="file" name="file" type="file" onchange="updateFileName(this)" required />
+          <span id="file-name-placeholder" class="file-name-placeholder">No file chosen</span>
+        </label>
+        <button type="submit" class="custom-upload-button">Upload</button>
+      </form>
+    </div>
+</body>
+</html>
+
+<script>
+  // Function to update file name placeholder
+  function updateFileName(input) {
+    var fileNamePlaceholder = document.getElementById("file-name-placeholder");
+    if (input.files.length > 0) {
+      fileNamePlaceholder.innerText = input.files[0].name;
+    } else {
+      fileNamePlaceholder.innerText = "No file chosen";
+    }
+  }
+</script>
